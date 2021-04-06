@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Orinoco, meubles en chênes artisanaux">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="../Img/favicone.gif">
+	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+
+    <title>Orinoco, meubles en chêne artisanaux</title>
+</head>
+<body>
+<div id="container">
+
+    <!-- HEADER -->
+
+    <header>
+        <img src="../Img/LogoOrinoco.jpg" alt="Logo de Orinoco">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="commande.html">Commande</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION -->
+    <section>
+        <h1>Panier</h1>
+
+            <!-- Panier -->
+
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <th>Nom du produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                </thead>
+                <tr>
+                    <td>Tabouret</td>
+                    <td>100€</td>
+                    <td>
+                        <input type="number" id="quantité" name="quantité" min="1" placeholder="1">
+                        <button><img src="../Img/moins-26-orange.png" alt="Icone moins orange"></button>
+                        <button><img src="../Img/plus-26-violet.png" alt="Iccone plus violet"></button>
+                        <button>Supprimer</button>
+                    </td>
+                    <td>100€</td>
+                </tr>
+                <tr>
+                    <td>Vermis mat</td>
+                    <td>10€</td>
+                    <td>
+                        <input type="number" id="quantité" name="quantité" min="0" placeholder="0">
+                        <button><img src="../Img/moins-26-orange.png" alt="Icone moins orange"></button>
+                        <button><img src="../Img/plus-26-violet.png" alt="Iccone plus violet"></button>
+                        <button>Supprimer</button>
+                    </td>
+                    <td>10€</td>
+                </tr>
+                <tr>
+                    <td>Vernis foncé</td>
+                    <td>10€</td>
+                    <td>
+                        <input type="number" id="quantité" name="quantité" min="0" placeholder="0">
+                        <button><img src="../Img/moins-26-orange.png" alt="Icone moins orange"></button>
+                        <button><img src="../Img/plus-26-violet.png" alt="Iccone plus violet"></button>
+                        <button>Supprimer</button>
+                    </td>
+                    <td>10€</td>
+                </tr>
+                <tr>
+                    <td>Vernis transparent</td>
+                    <td>10€</td>
+                    <td>
+                        <input type="number" id="quantité" name="quantité" min="0" placeholder="0">
+                        <button><img src="../Img/moins-26-orange.png" alt="Icone moins orange"></button>
+                        <button><img src="../Img/plus-26-violet.png" alt="Iccone plus violet"></button>
+                        <button>Supprimer</button>
+                    </td>
+                    <td>10€</td>
+                </tr>
+            </table>
+    </section>
+
+            <!-- Formulaire -->
+
+    <section>
+        <h1>Merci de remplir le formulaire de livraison suivant :</h1>
+        <form methode="post" >
+            <div class="form-group">
+                <label for="firstname">Prénom :</label>
+                <input type="text" id="firstname" class="form-control" required>
+                <label for="lastname">Nom :</label>
+                <input type="text" id="lastname" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="adress">Adresse :</label>
+                <input type="text" id="adress" class="form-control" required>
+                <label for="city">Ville :</label>
+                <input type="tel" id="city" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="date">Date de livraison souhaité (sous 48h durant les jours ouvrés) :</label>
+                <input type="date" id="date" class="form-control">
+            </div>
+            <div>
+                <label for="msg">Message pour le livreur:</label>
+                <textarea id="msg" name="message"></textarea>
+            </div>
+            <a href="commande.html"><button>Valider la commande</button></a>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    
+    <footer>
+        <img src="../Img/LogoOrinoco.jpg" alt="Logo de Orinoco">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="commande.html">Commande</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+    </div>
+    </body>
+    </html>
